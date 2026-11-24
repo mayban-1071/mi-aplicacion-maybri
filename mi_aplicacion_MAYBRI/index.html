@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PAGINA RENOVA </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfbfb;
+            color: #333;
+        }
+
+        header {
+            background-color: #d88cca;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        | .quienes-somos {
+            background-color: #f7e1d7;
+            text-align: center;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .productos-lista {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .categoria-box {
+            background-color: #f7e1d7;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            width: 180px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilos para la tabla de precios */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #f7e1d7;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #d88cca;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .btn-wa {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--encabezado-->
+
+    <header>
+        <h1 id="inicio">RENOVA</h1>
+
+        <p>Detalles que hacen de cada día algo especial</p>
+
+
+        <nav>
+            <a href="#quienes-somos">¿Quiénes somos?</a>
+            <a href="#productos">Productos</a>
+            <a href="#precios">Precios</a>
+
+        </nav>
+    </header>
+
+    <!--seccion¿quienes somos?-->
+    <section id="quienes-somos" class="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <p><strong>RENOVA</strong> es un empremdimiento que busca ofrecer a sus clientes una experiencia única, y
+            memorable
+            al
+            momento de regalar detalles.</p>
+        <p>Nos especializamos en la creación de arreglos personalizados y en la venta de rosas eternas, que
+            son flores diseñadas sin necesidad de cuidados especiales.</p>
+        <p> Nuestro objetivo es brindar un servicio excepcional y productos de alta calidad para que cada regalo sea
+            inolvidable.</p>
+
+        <seletion>
+
+
+            <!--SECCION DE PRODUCTOS -->
+            <section id="productos">
+                <h2 style="text-align: center;">Nuestros Productos</h2>
+                <div class="productos-lista">
+                    <div class="categoria-box">
+                        <h3>INSUMOS</h3>
+                        <p>Todo lo necesario para crear tus propios arreglos y detalles personalizados.</p>
+                    </div>
+                    <div class="categoria-box">
+                        <h3>KIT EMPRENDEDOR</h3>
+                        <p>Kit completo para iniciar tu propio negocio de arreglos y regalos.</p>
+                    </div>
+                    <div class="categoria-box">
+                        <h3>RAMOS DE ROSAS ETERNAS</h3>
+                        <p>Ramos elegantes y duraderos que transmiten amor y aprecio.</p>
+                    </div>
+                    <div class="categoria-box">
+                        <h3>DETALLES PERSONALIZADOS</h3>
+                        <p>Regalos únicos y personalizados para cada ocasión especial.</p>
+                    </div>
+                    <div class="categoria-box">
+                        <h3>REGALOS PARA TODA OCASIÓN</h3>
+                        <p>Opciones de regalos versátiles para cumpleaños, aniversarios y más.</p>
+                    </div>
+
+            </section>
+
+
+
+            <label for="opciones">CATEGORÍA </label>
+            <select name="=" opciones">
+                <option value="opcion1">GRADOS </option>
+                <option value="opcion2"> CUMPLEAÑOS</option>
+                <option value="opcion3">PERSONALIZADO</option>
+                <option value="opcion4">DÍA DE LA MADRE</option>
+                <option value="opcion5">SAN VALENTIN</option>
+                <option value="opcion6">DÍA DEL PADRE</option>
+                <option value="opcion7">ANIVERSARIO</option>
+                <select>
+
+
+                    <form>
+                        <!--radio buttons:-->
+                        <p>escoje tu ocacion</p>
+                        <input type="radio" id="opcion1" name="opciones" value="opcion1">
+                        <label for="opcion1">grados</label>
+                        <input type="radio" id="opcion2" name="opciones" value="opcion2">
+                        <label for="opcion2">cumpleaños</label>
+                        <input type="radio" id="opcion3" name="opciones" value="opcion3">
+                        <label for="opcion3">personalizado</label>
+                    </form>
+
+
+                    <!--seccion de precios (tabla)-->
+                    <h2 style="text-align: center;">CATALOGO DE PRECIOS</h2>
+                    <section id="precios">
+                        <table>
+                            <thead>
+                                <table border="1">
+                                    <tr>
+                                        <th>detalles</th>
+                                        <th>¿Que incluye?</th>
+                                        <th>precio</th>
+                                        <th>ocacion ideal</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Ramo mini de rosas eternas</td>
+                                        <td>Ramo de 3 rosas eternas, caja decorativa y tarjeta personalizada</td>
+                                        <td>$30.000</td>
+                                        <td>cumpleaños, aniversarios, día de la madre, día del padre</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ramo clasico</td>
+                                        <td>12 rosas eternas, caja decorativa y tarjeta personalizada</td>
+                                        <td>$70.000</td>
+                                        <td>aniversario, amor y amistad</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Ramo de grande</td>
+                                        <td>24 rosas eternas + corona + luces led + tarjeta personalizada</td>
+                                        <td>$100.000</td>
+                                        <td>san valentin grados</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Ramo lujo</td>
+                                        <td>36 rosas eternas + corona + luces led + tarjeta personalizada</td>
+                                        <td>$150.000</td>
+                                        <td>san valentin, aniversarios, cumpleaños</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>kit emprendedor básico</td>
+                                        <td>2 rollos de cinta +papel coreano + silicona + palillos </td>
+                                        <td>$35.000</td>
+                                        <td>para empezar aemprender</td>
+                                </table>
+                    </section>
+    </section>
+</body>
+
+</html>
